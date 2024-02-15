@@ -1,15 +1,79 @@
+<!-- Mark Neil G. Autriz -->
+<!-- CMSC 100 - UV2L : Exercise 1 : Personal Website -->
+
+
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-  <head>
-    <title>Sample Web Page</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title code craft is my personal preference for the website -->
+    <title>Code Craft</title>
 
-  <body>
-    <h1>This is a heading</h1>
-    <p>This is the first paragraph of text</p>
-    <hr />
-    <p>This is the second paragraph of text</p>
-  </body>
+    <!-- This line links the HTML file to an external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- These lines link the HTML file to Google Fonts for custom typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- This line imports Font Awesome icons for use within the document -->
+    <script src="https://kit.fontawesome.com/104481f5f5.js" crossorigin="anonymous"></script>
+
+    <!-- This line imports the Smooth Scroll library for smooth scrolling functionality -->
+    <!-- This can be optional po, I just added this to ensure that the scrolling of the website will be smoother po.-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+
+<body>
+    <!-- This section contains the banner of the webpage -->
+    <section id="banner">
+        <div class="bannerText">
+            <!-- Heading indicating the name of the website -->
+            <h1>Code Craft</h1>
+            <!-- Subheading providing a slogan or tagline for the website -->
+            <p>Precision in Every Pixel, Perfection in Every Line</p>
+
+            <!-- Container for banner buttons -->
+            <div class="bannerButton">
+                <!-- Button linking to the "Know the Developer" section -->
+                <a href="#footer"><span></span>Know the Developer</a>
+                <!-- Button linking to the "See Field of Work" section -->
+                <a href="#service"><span></span>See Field of Work</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- This is the part that revolves around the side navigation which is presented at the top based on the template that is given
+    in the programming exercise # 2-->
+    <div class="container">
+            <!-- Side Navigation Bar -->
+            <div id="sideNavigation">
+                <nav>
+                    <ul>
+                        <!-- Logo linking to the banner section -->
+                        <li><a href="#banner"><img src="Images/logo.png" class="logo" alt="Logo"></a></li>
+                        <!-- Navigation links so that we will be able to access other portions of the page.-->
+                        <li><a href="#features">INTRODUCTION</a></li>
+                        <li><a href="#service">SERVICES</a></li>
+                        <li><a href="#testimonial">SKILLS & AUTOBIOGRAPHY</a></li>
+                        <li><a href="#footer">DEVELOPER</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+
+
+
+
+            
+
+</body>
 
 </html>

@@ -1,0 +1,139 @@
+/* Autriz, Mark Neil G. CMSC 100 - UV2L */
+/* This is the attached CSS file to style, layout and design the website */
+
+
+/* Apply basic styles to reset default margin, padding, and font-family */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Banner Styling */
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #0766AD),url(Images/background.jpg);
+    height: 100vh; /* Set banner height to fill the viewport height */
+    background-size: cover; /* Ensure background image covers the entire section */
+    background-position: center; /* Center the background image */
+}
+
+
+/* Logo Styling */
+.logo {
+    width: 50%; /* Set logo width */
+    display: block;  /* Make the logo a block element so that it will follow the layout of the navigation bar and fit - in*/
+}
+
+.bannerText{
+    text-align: center;
+    color: #fff;
+    padding-top: 220px;
+}   
+
+/* We utilize the font-family that we have imported for a more creative perspective */
+.bannerText h1{
+    font-size: 100px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* Format the text in the banners to be italic */
+.bannerText p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Determine the margin that the button has */
+.bannerButton {
+    margin: 5px auto 5px;
+}
+
+/* Banner Button Styling */
+.bannerButton a{
+    color: #fff;
+    text-decoration: none;
+    display:inline-block;
+    margin: 40px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    position:relative; /* Establish positioning context for pseudo-element */
+    z-index: 1; /* Ensure buttons appear above pseudo-element */
+    transition: color 0.5s; 
+}
+
+.bannerButton a span{
+    width:5%; /* Set width of pseudo-element */
+    height: 100%; /* Set height of pseudo-element */
+    position:absolute; /* Position pseudo-element absolutely relative to its parent */
+    top:0; /* Align pseudo-element with the top edge of its parent */
+    left:0; /* Align pseudo-element with the left edge of its parent */
+    background-color: transparent;  /* Set background color of pseudo-element */
+    z-index: -1; /* Place pseudo-element behind its parent */
+    transition: width 0.5s; /* Add transition effect for width change */
+}
+
+.bannerButton a:hover span{
+    width: 100%; /* Expand pseudo-element width on hover */
+    background-color: #fff; /* Change background color on hover */
+}
+
+.bannerButton a:hover {
+    color: #0bb0d1; /* Change text color on hover */
+}
+
+.container {
+    position: relative;
+}
+
+
+/* Side Navigation Styling */
+#sideNavigation {
+    position: fixed; /* Fix the side navigation bar position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0766AD; 
+    text-align: center; 
+    z-index: 1000; /* Ensure navigation appears above other content */
+}
+
+#sideNavigation nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center align items */
+    align-items: center;
+}
+
+/* Styling for navigation list items */
+#sideNavigation nav ul li {
+    margin-right: 20px; /* Add margin between navigation items */
+}
+
+/* Styling for the last navigation list item */
+#sideNavigation nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last navigation item */
+}
+
+/* Styling for navigation links */
+#sideNavigation nav ul li a {
+    display: block; /* Make navigation links block-level elements */
+    color: #fff;
+    text-decoration: none; /* Remove default underline decoration */    
+    transition: all 0.3s ease; /* Add transition effect for smoother hover */
+}
+
+#sideNavigation nav ul li a:hover {
+    background-color: #0056b3; /* Darker shade of blue whenever it is hovered */
+}
+
+.logo {
+    width: 100px; /* Set logo width for a clearer approach */
+    vertical-align: middle; /* Align the logo vertically */
+    margin-right: 10px; /* Add margin to separate logo from other links */
+}
