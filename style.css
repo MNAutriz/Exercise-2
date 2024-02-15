@@ -137,3 +137,127 @@
     vertical-align: middle; /* Align the logo vertically */
     margin-right: 10px; /* Add margin to separate logo from other links */
 }
+
+
+
+
+/* This primarily revolves in the styling and designing of the header fonts and style per section */
+.titleText {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Styling for paragraphs within title text */
+.titleText p {
+    margin: auto;
+    font-size: 20px;
+    color: #0bb0d1;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;  /* Set stacking order */
+    display: inline-block; /* Make paragraph an inline block */
+}
+
+/* Styling for pseudo-element after paragraph */
+.titleText p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#0bb0d1, #fff); /* Apply gradient background */
+    position: absolute; /* Position pseudo-element absolutely */
+    top: -20px; /* Position pseudo-element above paragraph */
+    left: 0; /* Position pseudo-element at the left */
+    transform: rotate(10deg);  /* Rotate pseudo-element to form the leaf-life structure */
+    border-top-left-radius: 35px; 
+    border-bottom-right-radius: 35px;
+    z-index: -1;/* Set stacking order behind paragraph */
+}
+
+/* Styling for heading within title text */
+.titleText h1 {
+    font-size: 50px;
+}
+
+/* Styling the previous projects that I have created */
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #efefef;
+}
+
+.descriptionService{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.serviceBox {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+}
+
+.singleService {
+    flex: 1 1 calc(20% - 20px); /* Each service takes 25% width with some gap */
+    position: relative;
+    border-left: 10px solid #efefef; /* Add border to the left */
+    border-right: 10px solid #efefef; /* Add border to the right */
+}
+
+.singleService img{
+    width: 100%;
+    border-radius: 7px;
+    height: 100%;
+}
+
+.overlay{
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5), #0014f0);
+    opacity: 0;
+    transition: 1s;
+}
+
+.singleService:hover .overlay{
+    opacity: 1;
+}
+
+.serviceDescription{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity:0;
+    transform: translateX(-50%);
+    transition: 1s;
+    color: white;
+}
+
+hr{
+    background: white;
+    margin: 15px auto;
+    height: 2px;
+    border: 0;
+    width: 90%;
+}
+
+.serviceDescription p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.serviceDescription h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+.singleService:hover .serviceDescription{
+    bottom: 25%;
+    opacity: 1;
+}
