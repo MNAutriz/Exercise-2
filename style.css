@@ -182,13 +182,13 @@
 #service{
     width: 100%;
     padding: 70px 0;
-    background-color: #efefef;
+    background-color: white;
 }
 
 .descriptionService{
     font-size: 18px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -202,8 +202,8 @@
 .singleService {
     flex: 1 1 calc(20% - 20px); /* Each service takes 25% width with some gap */
     position: relative;
-    border-left: 10px solid #efefef; /* Add border to the left */
-    border-right: 10px solid #efefef; /* Add border to the right */
+    border-left: 20px solid #fff; /* Add border to the left */
+    border-right: 20px solid #fff; /* Add border to the right */
 }
 
 .singleService img{
@@ -260,4 +260,108 @@ hr{
 .singleService:hover .serviceDescription{
     bottom: 25%;
     opacity: 1;
+}
+
+
+/* This section named testimonial primarily revolves around the skills and autobiography section */
+#testimonial {
+    width: 100%;
+    padding: 70px 0; /* Padding for top and bottom */
+    background-color: #efefef;
+}
+
+/* Styles for the title text */
+.titleText {
+    text-align: center;
+    padding-bottom: 50px; /* Padding for bottom */
+}
+
+/* Styling for the paragraph in titleText */
+.titleText p {
+    margin: auto;
+    font-size: 20px;
+    color: #0bb0d1; /* Text color */
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+/* Styling for the pseudo-element after the paragraph */
+.titleText p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#0bb0d1, #fff); /* Background gradient */
+    position: absolute;
+    top: -20px; 
+    left: 0;
+    transform: rotate(10deg); 
+    border-top-left-radius: 35px; 
+    border-bottom-right-radius: 35px; 
+    z-index: -1; /* Behind the paragraph */
+}
+
+/* Styling for the main heading */
+.titleText h1 {
+    font-size: 50px;
+}
+
+/* Styling for the row containing testimonials */
+.testimonialRow {
+    width: 80%;
+    margin: auto; /* Centering */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Styling for each testimonial column */
+.testimonialColumn {
+    flex-basis: 45%; /* Adjust width */
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 10px 20px 3px #0766AD; /* Box shadow */
+    cursor: pointer;
+    transform: transform 1s;
+}
+
+/* Additional styling for testimonial information */
+.additionalInfo {
+    padding: 20px;
+}
+
+/* Styling for headings in skills and autobiography sections */
+.skills h3,
+.autobiography h3 {
+    font-size: 20px;
+    text-align: center; 
+}
+
+/* Styling for the skills list */
+.skills ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+/* Styling for each skill in the list */
+.skills ul li {
+    margin-bottom: 10px; /* Spacing between skills */
+}
+
+/* Styling for the autobiography paragraph */
+.autobiography p {
+    font-size: 15px; /* Font size */
+    text-align: justify; /* Justified alignment */
+}
+
+/* Add margin-right to the first section and margin-left to the second section */
+.testimonialRow .testimonialColumn:first-child {
+    margin-right: 20px; 
+}
+
+.testimonialRow .testimonialColumn:last-child {
+    margin-left: 20px; 
 }
