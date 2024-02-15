@@ -15,6 +15,7 @@
     height: 100vh; /* Set banner height to fill the viewport height */
     background-size: cover; /* Ensure background image covers the entire section */
     background-position: center; /* Center the background image */
+    margin: 0 20px; /* Add padding to the left and right */
 }
 
 
