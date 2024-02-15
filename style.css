@@ -365,3 +365,84 @@ hr{
 .testimonialRow .testimonialColumn:last-child {
     margin-left: 20px; 
 }
+
+
+/* Footer styling */
+#footer {
+    padding: 100px 0 20px; /* Padding for top, bottom, and reset bottom padding */
+    background-color: #fff; 
+    position: relative;
+}
+
+/* Styling for the row containing footer content */
+.footerRow {
+    width: 80%; /* Width of the content */
+    margin: 0 auto; 
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Spacing between elements */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Styling for the left side of the footer */
+.footerLeft {
+    flex-basis: 30%; /* Width of the left side */
+    padding: 10px; /* Padding */
+    margin-bottom: 20px; 
+    text-align: left; /* Text alignment */
+}
+
+/* Styling for the right side of the footer */
+.footerRight {
+    flex-basis: 65%; /* Width of the right side */
+    padding: 10px; 
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styling for headings within the footer */
+.footerRow h1 {
+    margin: 10px 0; 
+}
+
+/* Styling for paragraphs within the footer */
+.footerRow p {
+    line-height: 30px; /* Line height */
+}
+
+/* Styling for font-awesome icons */
+.footerLeft .fa,
+.footerRight .fa {
+    color: #0bb0d1; /* Icon color */
+    font-size: 20px; /* Icon size */
+    margin: 10px; /* Spacing */
+}
+
+/* Styling for the globe icon */
+.fa-globe{
+    color: #0bb0d1; /* Icon color */
+    font-size: 20px; /* Icon size */
+    margin: 10px; /* Spacing */
+}
+
+/* Styling for the back to top button */
+.backToTop {
+    bottom: 20px; 
+    margin-left: 150px; 
+    background-color: #0bb0d1; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    text-decoration: none; /* Remove underline */
+    transition: opacity 0.3s ease; /* Transition effect */
+    z-index: 999; /* Z-index to bring it above other elements */
+}
+
+/* Hover effect for back to top button */
+.backToTop:hover {
+    opacity: 0.8; /* Change opacity on hover */
+}
+
+/* Styling for the footer logo */
+.footerLogo{
+    width: 70%; /* Set width */
+}
